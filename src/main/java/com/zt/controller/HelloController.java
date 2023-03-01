@@ -1,15 +1,17 @@
 package com.zt.controller;
 
-import ch.qos.logback.core.model.Model;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HelloController {
-    @RequestMapping("/hello")
-    public String hello(){
+    @RequestMapping("/index")
+    public String hello(Model model){
+        model.addAttribute("msg","<h1>adaw</h1>");
 
-        return "hello,world,hello,git";
+        return "index";
 
 
     }
