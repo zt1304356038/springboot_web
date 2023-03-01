@@ -5,6 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1 th:utext="${msg}"></h1>
+<div th:each="usr:${usrs}" th:text="${usr}"></div>
 </body>
 </html>
